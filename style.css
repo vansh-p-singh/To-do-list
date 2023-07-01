@@ -1,0 +1,113 @@
+html{
+    height: 100%;
+}
+body{
+    background:linear-gradient(to left,rgb(99,218,209) 10%,rgb(74,132,228));
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+main{
+    min-height: 70%;
+    width: 35%;
+    background-color: white;
+    padding: 10px;
+    margin: 35px auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+h1{
+    margin: 20px 0px 30px 0px;
+    line-height: 13px;
+    font-size: 35px;
+}
+#addInput{
+    height: 32px;
+}
+#task-input{
+    height:100%;
+    font-size: inherit;
+    width: 85%;
+    padding: 0px 2px;
+    border-width: 0px 0px 2px 0px;
+}
+#add-task-btn{
+    height: 100%;
+    width: 8.5%;
+    padding: 0px;
+    border-radius: 2px;
+    font-size: 24px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    transition: 0.2s;
+}
+#add-task-btn:hover{
+    transform: scale(1.05);
+}
+#add-task-btn:focus,input:focus{
+    outline: none;
+}
+#add-task-btn:active{
+    background-color: rgb(99, 31, 161);
+}
+#task-count{
+    color: rgb(117,126,166);
+}
+ul{
+    padding: 0px;
+    margin-top: 24px;
+    margin-left: 5px;
+}
+ul>li{
+    list-style: none;
+    position: relative;
+    padding: 4px;
+}
+li>p{
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 0px;
+    word-spacing: 2px;
+}
+li:nth-child(2n){
+    background-color: rgb(238, 234, 234);
+}
+li:hover{
+    background-color: rgb(188, 186, 190);
+}
+li>button{
+    float: inline-end;
+    height: 30px;
+    margin: 0px 4px;
+    border: 0px;
+    font-size: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color:grey;
+    color: white;
+    display: none;
+}
+li>button:hover{
+    transform: scale(1.05);
+}
+li:hover>button{
+    display: inline;
+}
+.delete-btn:hover{
+    background-color: red;
+}
+.complete-btn:hover{
+    background-color: yellowgreen;
+}
+.complete-btn:active{
+    background-color: rgb(155, 223, 19);
+}
+.delete-btn:active{
+    background-color: rgb(214, 59, 59);
+}
+.completed{
+    text-decoration: line-through;
+    color: grey;
+}
