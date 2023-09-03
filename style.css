@@ -8,7 +8,7 @@ body{
     font-size: 18px;
 }
 main{
-    min-height: 70%;
+    height: 70%;
     width: 35%;
     background-color: white;
     padding: 10px;
@@ -55,7 +55,16 @@ h1{
 #task-count{
     color: rgb(117,126,166);
 }
-ul{
+#on-gng-div{
+    height: 80%;
+    flex-direction: column;
+    display: flex;
+}
+#on-gng-list{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
     padding: 0px;
     margin-top: 24px;
     margin-left: 5px;
@@ -70,7 +79,9 @@ li{
     align-items: center;
 }
 li>p{
-    display: inline-block;
+    width: 100% ;
+    display: flex;
+    overflow: hidden;
     font-size: 20px;
     margin: 5px 0px;
     word-spacing: 2px;
@@ -122,4 +133,32 @@ li:hover button{
 .completed{
     text-decoration: line-through;
     color: grey;
+}
+
+/* Media Queries */
+@media all and (max-width:1000px){
+    main{
+        width:45%
+    }
+}
+@media all and (max-width:800px){
+    main{
+        width: 55%;
+    }
+}
+@media screen and (max-width:650px){
+    main{
+        width: 70%;
+        height: 80%;
+    }
+    
+}
+@media screen and (max-width:600px){
+    main{
+        width: 95%;
+        height: 87%;
+    }
+    li>p{
+        font-size: 18px;
+    }
 }
