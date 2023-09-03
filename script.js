@@ -31,12 +31,12 @@ function updateTodo(){
     for(let x=0;x<tasks.length;x++){
         if(tasks[x].done==true){
             let item=document.createElement("li");
-            item.innerHTML=`<p class="completed">${tasks[x].text}</p><button class='delete-btn' data-id=${tasks[x].id}><i class='bi bi-trash3-fill'></i></button><button class='complete-btn' data-id=${tasks[x].id}><i class="bi bi-x-lg"></i></button>`;
+            item.innerHTML=`<p class="completed">${tasks[x].text}</p><div class="button-container"><button class='delete-btn' data-id=${tasks[x].id}><i class='bi bi-trash3-fill'></i></button><button class='complete-btn' data-id=${tasks[x].id}><i class="bi bi-x-lg"></i></button></div>`;
             taskslist.appendChild(item);
         }
         else{
             let item=document.createElement("li");
-            item.innerHTML=`<p>${tasks[x].text}</p><button class='delete-btn' data-id=${tasks[x].id}><i class='bi bi-trash3-fill'></i></button><button class='complete-btn' data-id=${tasks[x].id}><i class='bi bi-check-lg'></i></button>`;
+            item.innerHTML=`<p>${tasks[x].text}</p><div class="button-container"><button class='delete-btn' data-id=${tasks[x].id}><i class='bi bi-trash3-fill'></i></button><button class='complete-btn' data-id=${tasks[x].id}><i class='bi bi-check-lg'></i></button></div>`;
             taskslist.appendChild(item);
         }
     }
