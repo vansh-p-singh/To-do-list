@@ -8,7 +8,7 @@ body{
     font-size: 18px;
 }
 main{
-    height: 70%;
+    height: 75%;
     width: 35%;
     background-color: white;
     padding: 10px;
@@ -161,4 +161,9 @@ li:hover button{
     li>p{
         font-size: 18px;
     }
+}
+@media screen and (max-height:650px){
+    main{
+        height: 80%;
+    };
 }
